@@ -58,7 +58,7 @@ const AuthScreen = () => {
 					{/* right side */}
 					<div className='flex-1 relative'>
 						<img src='/tv.png' alt='Tv image' className='mt-4 z-20 relative' />
-						<video
+						{/* <video
 							className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 z-10'
 							playsInline
 							autoPlay={true}
@@ -66,7 +66,7 @@ const AuthScreen = () => {
 							loop
 						>
 							<source src='/hero-vid.m4v' type='video/mp4' />
-						</video>
+						</video> */}
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@ const AuthScreen = () => {
 					{/* right side */}
 					<div className='flex-1 relative overflow-hidden'>
 						<img src='/device-pile.png' alt='Device image' className='mt-4 z-20 relative' />
-						<video
+						{/* <video
 							className='absolute top-2 left-1/2 -translate-x-1/2  h-4/6 z-10
                max-w-[63%] 
               '
@@ -140,7 +140,7 @@ const AuthScreen = () => {
 							loop
 						>
 							<source src='/video-devices.m4v' type='video/mp4' />
-						</video>
+						</video> */}
 					</div>
 				</div>
 			</div>
