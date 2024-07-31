@@ -16,7 +16,7 @@ const app = express();
 const PORT = ENV_VARS.PORT;
 const __dirname = path.resolve();
 
-app.use(express.json()); // will allow us to parse req.body
+app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/v1/auth", authRoutes);
@@ -25,6 +25,7 @@ app.use("/api/v1/tv", protectRoute, tvRoutes);
 app.use("/api/v1/search", protectRoute, searchRoutes);
 
 if (ENV_VARS.NODE_ENV === "production") {
+	console.log("Production mode");
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 	app.get("*", (req, res) => {
